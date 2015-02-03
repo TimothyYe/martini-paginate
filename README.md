@@ -21,7 +21,7 @@ go get
 
 ## Usage
 
-* Set paginate as the handler:
+* Set paginator's handler as the middleware:
 
 ```go
 m = martini.Classic()
