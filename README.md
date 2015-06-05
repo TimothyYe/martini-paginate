@@ -9,7 +9,7 @@ Import it into source code:
 
 ```go
 import (
-	"github.com/go-martini/martini"
+	"github.com/timothyye/martini-paginate"
 )
 ```
 
