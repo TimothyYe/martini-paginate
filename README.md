@@ -56,10 +56,10 @@ func HandleCasts(r render.Render, db *mgo.Database, pager *paginate.Paginator) {
 	{{if gt .Paginator.PageNums 1}}
 	<ul class="pagination pagination-sm">
 		{{if .Paginator.HasPrev}}
-			<li><a href="{{.Paginator.PageLinkFirst}}">第一页</a></li>
+			<li><a href="{{.Paginator.PageLinkFirst}}">First</a></li>
 			<li><a href="{{.Paginator.PageLinkPrev}}">&lt;</a></li>
 		{{else}}
-			<li class="disabled"><a>第一页</a></li>
+			<li class="disabled"><a>First</a></li>
 			<li class="disabled"><a>&lt;</a></li>
 		{{end}}
 		
@@ -70,10 +70,10 @@ func HandleCasts(r render.Render, db *mgo.Database, pager *paginate.Paginator) {
 		{{end}}
 		{{if .Paginator.HasNext}}
 			<li><a href="{{.Paginator.PageLinkNext}}">&gt;</a></li>
-			<li><a href="{{.Paginator.PageLinkLast}}">最后一页</a></li>
+			<li><a href="{{.Paginator.PageLinkLast}}">Last</a></li>
 		{{else}}
 			<li class="disabled"><a>&gt;</a></li>
-			<li class="disabled"><a>最后一页</a></li>
+			<li class="disabled"><a>Last</a></li>
 		{{end}}
 	</ul>
 	{{end}}
